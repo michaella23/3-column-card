@@ -1,0 +1,126 @@
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(images/favicon-32x32.png);
+    background-size: cover;
+    background-repeat: auto;
+    background-position: center;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+
+}
+
+/*=================
+    typography
+==================*/
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+
+.attribution p { 
+    font-size: 11px;
+    color: black; 
+    text-align: center; 
+  }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+
+/*=================
+      layout
+==================*/
+
+.main-container {
+    background: white;
+    padding: 1em;
+}
+
+section {
+    padding: 3em;
+
+}
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    margin: 3em 0;
+    padding: 1em 2.5em;
+    border: none;
+    border-radius: 100px;
+}
+
+#sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+/*=====================
+    media queries
+======================*/
+
+
+@media (min-width: 750px) {
+    body {
+        margin: 0;
+    }
+
+    .flex {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 2.5em;
+    }
+
+    .main-container {
+        display: flex;
+        width: 75%;
+        min-width: 750px;
+        height: 535px;
+    }
+ 
+}
+
